@@ -79,10 +79,6 @@ main {
     padding-bottom: 80px;
 }
 
-main div {
-    display: flex;
-}
-
 main section {
     display: flex;
     justify-content: space-between;
@@ -102,9 +98,13 @@ main img:hover {
 }
 
 main .container img {
-    height: 300px;
     width: 300px;
+    height: 300px;
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
 }
 
 h2 {
@@ -133,21 +133,32 @@ h3 {
     margin-left: 160px;
 }
 
-#Pessoa-1 img,
-#Pessoa-2 img,
-#Pessoa-3 img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.container {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-#Pessoa-1,
-#Pessoa-2,
-#Pessoa-3 {
+.container div {
     text-align: center;
     width: 630px;
     height: 530px;
+    margin-bottom: 48px;
+    padding: 0px 15px;
+}
+
+.container div ul li a {
+    padding: 0px 16px;
+    transition: all .2s;
+}
+
+.container div ul li:hover {
+    filter: brightness(70%);
+}
+
+.container div h2 {
+    padding: 0px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: black;
 }
