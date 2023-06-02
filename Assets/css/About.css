@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    height: 60px;
+}
+
+ul li {
+    display: inline-flex;
+}
+
+ul li a {
+    color: #20c997;
+}
+
+ul li a:hover {
+    color: #20c997;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+footer {
+    text-align: center;
+    line-height: 1.7;
+    color: #777;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+footer a {
+    text-transform: uppercase;
+    line-height: 1.7;
+    color: #777;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: .3s all ease;
+}
+
+footer a:hover {
+    color: #20c997;
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+main div {
+    display: flex;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+main img {
+    margin-right: 210px;
+    padding-right: 15px;
+    filter: grayscale(1);
+    transition: .2s all ease;
+}
+
+main img:hover {
+    filter: grayscale(0);
+    transform: scale(101%);
+}
+
+main .container img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 56px;
+}
+
+p {
+    margin-bottom: 16px;
+    color: #777;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+#Logo {
+    font-size: 32px;
+}
+
+#Mission {
+    padding: 0px 15px;
+    margin-left: 160px;
+}
+
+#Pessoa-1 img,
+#Pessoa-2 img,
+#Pessoa-3 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Pessoa-1,
+#Pessoa-2,
+#Pessoa-3 {
+    text-align: center;
+    width: 630px;
+    height: 530px;
+}

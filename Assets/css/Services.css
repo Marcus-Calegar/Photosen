@@ -108,6 +108,10 @@ p, strong {
     margin-bottom: 16px;
 }
 
+p {
+    line-height: 30px;
+}
+
 #Logo {
     font-size: 32px;
 }
