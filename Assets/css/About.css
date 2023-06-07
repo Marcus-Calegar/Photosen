@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +7,9 @@
 }
 
 body {
-    width: 100%;
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     overflow-x: hidden;
     padding-left: 15px;
@@ -28,6 +29,17 @@ ul {
 
 ul li {
     display: inline-flex;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+ul li:hover {
+    color: #20c997;
+    cursor: pointer;
 }
 
 ul li a {
@@ -124,8 +136,79 @@ h3 {
     margin-bottom: 8px;
 }
 
+svg {
+    fill: grey;
+    padding-right: 16px;
+    transition: all .1s ease-in-out;
+}
+
+svg:hover {
+    fill: white;
+    cursor: pointer;
+}
+
 #Logo {
     font-size: 32px;
+}
+
+#Gallery-Menu {
+    position: relative;
+}
+
+#Gallery-Menu:hover {
+    color: #20c997;
+    cursor: pointer;
+}
+
+#Gallery-Menu:hover #DropList {
+    opacity: 1;
+    z-index: 99;
+}
+
+#DropList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+    opacity: 0;
+    z-index: -99;
+    margin-top: 2.4vh;
+    left: 0px;
+    border-top: 2px solid #20c997;
+}
+
+#DropList li {
+    font-size: 16px;
+    text-transform:capitalize;
+    width: 200px;
+    height: 45px;
+    color: black;
+    background-color: white;
+    height: 4vh;
+    text-align: left;
+    padding: 9px 20px;
+}
+
+#DropList li:hover {
+    background: #f4f5f9;
+}
+
+#SubMenu {
+    position: relative;
+}
+
+#Sub-DropList {
+    border-top: 2px solid #20c997;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+#SubMenu:hover #Sub-DropList {
+    opacity: 1;
+    z-index: 99;
 }
 
 #Mission {
